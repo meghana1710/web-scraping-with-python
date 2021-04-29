@@ -7,7 +7,6 @@ soup=BeautifulSoup(page.text,'html.parser')
 soup.title
 name=[]
 price=[]
-pic=[]
 for a in soup.findAll('a',href=True,attrs={'class':'_1fQZEK'}):
     name1=a.find('div',attrs={'class':'_4rR01T'})
     price1=a.find('div',attrs={'class':"col col-5-12 nlI3QM"})
